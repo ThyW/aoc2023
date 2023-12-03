@@ -1,0 +1,30 @@
+   Compiling day3 v0.1.0 (/home/zir/programming/rust/aoc2023/day3)
+warning: variable does not need to be mutable
+  --> src/bin/part2.rs:40:9
+   |
+40 |     let mut sum = 0;
+   |         ----^^^
+   |         |
+   |         help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` on by default
+
+warning: fields `y_start`, `y_end`, `x`, and `n` are never read
+ --> src/bin/part2.rs:4:5
+  |
+3 | struct PartialNum {
+  |        ---------- fields in this struct
+4 |     y_start: i32,
+  |     ^^^^^^^
+5 |     y_end: i32,
+  |     ^^^^^
+6 |     x: i32,
+  |     ^
+7 |     n: u32,
+  |     ^
+  |
+  = note: `#[warn(dead_code)]` on by default
+
+warning: `day3` (bin "part2") generated 2 warnings (run `cargo fix --bin "part2"` to apply 1 suggestion)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.21s
+     Running `/home/zir/programming/rust/aoc2023/day3/target/debug/part2`
